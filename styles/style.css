@@ -74,7 +74,7 @@ html {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
@@ -94,13 +94,13 @@ html {
 }
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
 }
 
 .result {
-  height: 456px;
+  min-height: 456px;
 }
 
 .result__video-container {
@@ -117,7 +117,7 @@ html {
   position: relative;
 }
 
-video {
+.result__video {
   width: 100%;
   height: 386px;
   object-fit: cover;
@@ -240,7 +240,7 @@ input[type="text"] {
 .content__video-card {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
